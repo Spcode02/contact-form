@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Contact form</title>
+
+  <link rel="stylesheet" href="/assets/style.css">
+  <script src="/assets/script.js" defer></script>
+</head>
+
+<body>
+  <div id="successToast" class="success-toast hidden">
+    <div class="toast-head">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+        class="icon icon-tabler icons-tabler-outline icon-tabler-circle-check">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+        <path d="M9 12l2 2l4 -4" />
+      </svg>
+      <div>Message Sent!</strong></div>
+    </div>
+    <div class="toast-content">
+      Thanks for completing the form. We'll be in touch soon!
+    </div>
+  </div>
+  <main>
+    <div class="container">
+      <form class="card" id="form">
+        <div class="form-title">
+          Contact Us
+        </div>
+        <div class="form-content">
+          <div class="form-row">
+            <div class="col-half">
+              <div class="form-group">
+                <label for="firstName">First Name <span class="primary">*</span></label>
+                <input type="text" id="firstName" class="form-control">
+                <span class="error">This field is required</span>
+              </div>
+            </div>
+            <div class="col-half">
+              <div class="form-group">
+                <label for="lastName">Last Name <span class="primary">*</span></label>
+                <input type="text" id="lastName" class="form-control">
+                <span class="error">This field is required</span>
+              </div>
+            </div>
+            <div class="col-full">
+              <div class="form-group">
+                <label for="email">Email Address <span class="primary">*</span></label>
+                <input type="text" id="email" class="form-control">
+                <span class="error"></span>
+                <!-- Please enter a valid email address -->
+              </div>
+            </div>
+            <div class="col-full">
+              <div class="form-group">
+                <p class="query-type-label">Query Type <span class="primary">*</span></p>
+              </div>
+              <div class="row">
+                <div class="col-half">
+                  <div class="form-group">
+                    <input type="radio" id="enquiry" name="query" class="form-radio">
+                    <label for="enquiry">General Enquiry <span class="primary">*</span></label>
+                    <span class="error">Please select a query type</span>
+                  </div>
+                </div>
+                <div class="col-half">
+                  <div class="form-group">
+                    <input type="radio" id="support" name="query" class="form-radio">
+                    <label for="support">Support Request</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-full">
+              <div class="form-group">
+                <label for="message">Message <span class="primary">*</span></label>
+                <textarea name="" id="message" class="form-control" rows="3"></textarea>
+                <span class="error">This field is required</span>
+              </div>
+            </div>
+            <div class="col-full">
+              <div class="form-group">
+                <div class="form-check">
+                  <input type="checkbox" id="consent" class="custom-checkbox">
+                  <label for="consent">I consent to being contacted by the team <span class="primary">*</span></label>
+                  <span class="error">To submit this form, please consent to being contacted</span>
+                </div>
+
+
+                <div>
+                  <button class="btn-primary" type="submit">Submit</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </main>
+
+
+
+
+
+
+  <!-- Email Address
+
+  This field is required
+
+
+  
+  Support Request
+
+
+  Message
+
+
+  
+  
+
+  Submit
+
+  Message Sent!
+  Thanks for completing the form. We'll be in touch soon! -->
+
+
+</body>
+
+</html>
